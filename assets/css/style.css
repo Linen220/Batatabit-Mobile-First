@@ -22,10 +22,259 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-size: 62.5%; */
+}
+html{
+    font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
     /* font-family: 'Inter', sans-serif; */
 }
-body{
 
+/* HEADER STYLE */
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;     
+    min-width: 320px; /* IMPORTANTE DEFINIR ESTO SIEMPRE */
+    height: 295px;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top:42px;
+}
+.header--title-container{
+    width: 90%; /* PARA CENTRAR DIVS */
+    min-width: 288px; /* COMO MINIMO TENDRA 288px DE WIDTH */
+    max-width: 900px;/* CUANDO LLEGUE A LOS 900px DEJARA DE CERCER */
+    margin-top: 33px;
+    text-align: center;
+}
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p{
+    margin-top: 2.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--title-container .header--button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(295px - 24px); /* SE RESTA LA ALTURA DEL HEADER MENOS LA ALTURA DEL BOTON */
+    left: calc(50% - 114.5px); /* SE RESTA EL 100% DE LEFT MENOS LA MITAD DEL WIDTH DEL BOTON */
+    width: 229px;
+    height: 48px;
+    padding: 1.2rem 1.6rem;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+}
+.header--button span{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    background-image: url('../icon/down-arrow.svg') ;
+}
+
+/* MAIN STYLE */
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background: var(--off-white);
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image:url('../img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container--title h2{
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--warm-black);
+}
+.main-exchange-container--title p{
+    margin-bottom: 48px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+}
+.main-currency-table, .main-commissions-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    /* height: 360px; */
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+/* .main-commissions-table{
+    display: none;
+} */
+.main-currency-table .currency-table__tittle, .commissions-table__tittle{
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 23px;
+    color: var(--bitcoin-orange);
+}
+.commissions-table__tittle{
+    color: var(--secondary-blue);
+}
+.currency-table__container, .commissions-table__container{
+    display: flex;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency-table__container table, .commissions-table__container table{
+    width: 100%;
+    height: 100%;
+}
+.currency-table__container table td, .commissions-table__container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19px;
+    color: #B5B0AC;
+    background: var(--just-white);
+}
+.currency-table__container .table--top-right, .commissions-table__container .table--top-right{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.border-left{
+    border-radius: 15px 0 0 0;
+}
+.border-right{
+    border-radius: 0 15px 0 0;
+}
+.border-bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.border-bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.currency-table__container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../icon/trending-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.currency-table__container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../icon/trending-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.currency-table__date, .commissions-table__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 64px;
+    padding: 8px;
+    background: var(--soft-orange);
+    border-radius: 8px;
+}
+.commissions-table__date{
+    background: var(--soft-blue);
+}
+.currency-table__date p, .commissions-table__date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+.inactive{
+    display: none;
+}
+
+/*ARROWS*/
+#arrow-right{
+    align-self: center;
+    position: absolute;
+    left: calc(90% - 5px);
+    width: 12px;
+    height: 20px;
+    background-image: url('../icon/right-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+#arrow-left{
+    align-self: center;
+    position: absolute;
+    left: calc(10% - 5px);
+    width: 12px;
+    height: 20px;
+    background-image: url('../icon/left-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .main-currency-table, .main-commissions-table{
+        display: block;
+    }
+    #arrow-right, #arrow-left{
+        display: none;
+    }
+    .main-tables-container{
+        display: flex;
+        justify-content: center;
+    }
+    .main-currency-table, .main-commissions-table{
+        margin: 0 80px;
+        width: auto;
+    }
 }

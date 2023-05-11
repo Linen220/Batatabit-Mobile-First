@@ -15,16 +15,79 @@
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <div class="header-container">
-            <!-- Solo una h1 por pagina -->
+        <img src="./assets/img/logo.svg" alt="">
+        <div class="header--title-container">
+            <!-- Solo un h1 por pagina -->
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="#">Conoce Nuestros Planes<span>i</span></a>
+            <a class="header--button" href="#">Conoce Nuestros Planes<span></span></a>
         </div>
     </header>
     <main>
-        <section></section>
+        <section class="main-exchange-container">
+            <div class="background-img"></div>
+            <div class="main-exchange-container--title">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+            </div>
+            <section class="main-tables-container">
+                <div id="currency" class="main-currency-table">
+                    <p class="currency-table__tittle">Monedas</p>
+                    <div class="currency-table__container">
+                        <table>
+                            <tr>
+                                <td class="border-left">Bitcoin</td>
+                                <td class="table--top-right border-right">$1.96<span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ethereum</td>
+                                <td class="table--top-right">$0.07<span class="up"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ripple</td>
+                                <td class="table--top-right">$2.15<span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom-left">Stellar</tdc>
+                                <td class="table--top-right border-bottom-right">$4.96<span class="down"></span></td>
+                            </tr>
+                        </table>
+                        <div id="arrow-right"></div>
+                    </div>
+                    <div class="currency-table__date">
+                        <p><b>Actualizado: </b>19 Julio 23:45</p>
+                    </div>
+                </div>
+
+                <div id="commissions" class="main-commissions-table inactive">
+                    <p class="commissions-table__tittle">Comisiones</p>
+                    <div class="commissions-table__container">
+                        <table>
+                            <tr>
+                                <td class="border-left">Bitrade</td>
+                                <td class="table--top-right border-right">$12.96</td>
+                            </tr>
+                            <tr>
+                                <td>Bitpreco</td>
+                                <td class="table--top-right">$13.07</td>
+                            </tr>
+                            <tr>
+                                <td>Novadax</td>
+                                <td class="table--top-right">$13.15</td>
+                            </tr>
+                            <tr>
+                                <td class="border-bottom-left">Coinext</tdc>
+                                <td class="table--top-right border-bottom-right">$14.96</td>
+                            </tr>
+                        </table>
+                        <div id="arrow-left"></div>
+                    </div>
+                    <div class="commissions-table__date">
+                        <p><b>Actualizado: </b>19 Julio 23:48</p>
+                    </div>
+                </div>
+            </section>
+        </section>
         <section></section>
         <section></section>
         <section></section>
@@ -34,5 +97,6 @@
     <footer>
 
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
