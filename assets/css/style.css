@@ -298,7 +298,53 @@ main{
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 32px;
+    color: #808080;
+}
+.product-detail__card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 16px auto;
+    padding: 15px;
+    background: var(--warm-black-1);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail__card span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-detail__card .clock{
+    background-image: url('../icon/clock.svg');
+}
+.product-detail__card .eye{
+    background-image: url('../icon/eye.svg');
+}
+.product-detail__card .dollar{
+    background-image: url('../icon/dollar-sign.svg');
+}
+.product-detail__card .check{
+    background-image: url('../icon/check-circle.svg');
+}
+
+
+.product__card-title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--just-white);
+}
+.product__card-body{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     color: #808080;
 }
 
