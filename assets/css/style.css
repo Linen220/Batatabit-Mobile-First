@@ -262,6 +262,46 @@ main{
     cursor: pointer;
 }
 
+/* SECTION main-product-detail */ 
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background: var(--warm-black);
+}
+.product-detail__batata-logo{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px; /* calc(0% - 12.5px) */
+    left: calc(50% - 20px);
+    background-image: url('../icon/batata.svg');
+}
+.prdouct-detail__title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+}
+.prdouct-detail__title h2{
+    font-weight: 700; /* ó bold*/
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    color: var(--just-white);
+}
+.prdouct-detail__title p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 32px;
+    color: #808080;
+}
+
 @media (min-width: 1024px) {
     .main-currency-table, .main-commissions-table{
         display: block;
