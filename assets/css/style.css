@@ -27,7 +27,6 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
     scroll-behavior : smooth;
-    /* font-family: 'Inter', sans-serif; */
 }
 
 /* HEADER STYLE */
@@ -367,7 +366,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('../img/bitcoinbaby2x.jpg');
+    background-image: url('../img/bitcoinbaby.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

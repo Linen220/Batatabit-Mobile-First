@@ -10,6 +10,10 @@
     font-size: 1.6rem;
 }
 
+.bitcoin-img-container{
+    background-image: url('../img/bitcoinbaby2x.jpg');
+}
+
 .main-tables-container{
     display: flex;
     width: 930px;
@@ -32,8 +36,4 @@
 /* FOOTER */ 
 footer .footer__left ul{
     font-size: 1.6rem;
-}
-.footer__right .footer-logo{
-    height: 100px;
-    width: 140px;
 }
