@@ -1,0 +1,39 @@
+.header--title-container h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+.main-exchange-container--title h2, .prdouct-detail__title h2, .bitcoin-img-container h2, .plans__tittle h2{
+    font-size: 3rem;
+    line-height: 4rem;  
+}
+.main-exchange-container--title p, .prdouct-detail__title p, .plans__tittle p{
+    font-size: 1.6rem;
+}
+
+.main-tables-container{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.product-cards__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+.plan-card__tittle{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.plans-container__slider{
+    justify-content: center;
+}
+
+/* FOOTER */ 
+footer .footer__left ul{
+    font-size: 1.6rem;
+}
+.footer__right .footer-logo{
+    height: 100px;
+    width: 140px;
+}

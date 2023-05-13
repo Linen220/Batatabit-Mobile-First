@@ -135,12 +135,25 @@ main{
     line-height: 18px;
     color: #757575;
 }
+
+/* TABLES */
+.main-tables-container{
+    display: flex;
+    gap: 30px;
+    height: 350px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table, .main-commissions-table{
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     /* height: 360px; */
-    margin: 0 auto;
+    margin: 0 20px; /* ME PERMITIO CENTRAR LA TABLA EN EL SCROLL MARGIN LEFT 20 Y RIGHT 20*/
     font-family: 'Inter', sans-serif;
 }
 /* .main-commissions-table{
@@ -237,8 +250,8 @@ main{
     display: none;
 }
 
-/*ARROWS*/
-#arrow-right{
+/*ARROWS CON JAVASCRIPT*/
+/* #arrow-right{
     align-self: center;
     position: absolute;
     left: calc(90% - 5px);
@@ -261,7 +274,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-}
+} */
 
 /* SECTION main-product-detail */ 
 .main-product-detail{
@@ -300,6 +313,7 @@ main{
     font-size: 14px;
     line-height: 18px;
     color: #808080;
+    margin-bottom: 30px;
 }
 .product-detail__card{
     width: 90%;
@@ -519,22 +533,11 @@ footer .footer__left ul a{
     color: var(--just-white);
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .main-currency-table, .main-commissions-table{
         display: block;
     }
     #arrow-right, #arrow-left{
         display: none;
     }
-    .main-tables-container{
-        display: flex;
-        justify-content: center;
-    }
-    .main-currency-table, .main-commissions-table{
-        margin: 0 80px;
-        width: auto;
-    }
-    .plans-container__slider{
-        justify-content: center;
-    }
-}
+} */
