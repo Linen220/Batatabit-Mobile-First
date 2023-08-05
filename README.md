@@ -36,7 +36,7 @@
 
 <br>
 
-<!-- ## What I learned
+## What I learned
 
 * Usage of **flex** layout's properties in css.
 * Used HTML5 semantic elements for better accessability and readability.
@@ -51,4 +51,4 @@
 - Frontend Mentor - [@Linen220](https://www.frontendmentor.io/profile/Linen220)
 - Github - Linen220
 
-<br> -->
+<br>
