@@ -1,6 +1,9 @@
 # Batatabit
 
-<!-- Eco Store is a website of an ecological that helps customers find environmentally-friendly products made with artisanal techniques and materials that promote environmental conservation at affordable prices. Its goal is to facilitate customers in searching for and acquiring sustainable products to contribute to the well-being of the planet. -->
+Welcome to Batatabit.
+Our Cryptocurrency Exchange Platform – Where Digital Assets Find New Homes!
+
+Embark on a seamless journey of trading digital wealth with our cutting-edge cryptocurrency exchange. Whether you're a seasoned trader or just venturing into the world of digital currencies, our platform offers a secure and user-friendly environment for buying, selling, and exchanging various cryptocurrencies. Join us today and explore the future of financial transactions!
 
 
 <br>
