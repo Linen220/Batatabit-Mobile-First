@@ -43,6 +43,7 @@
 * Used HTML5 semantic elements for better accessability and readability.
 * Used media queries for responsive design.
 * Used image carousel.
+* Usage of mobile first design.
 * Tried to maintain clean code.
 
 <br>
